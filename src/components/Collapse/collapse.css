@@ -1,0 +1,48 @@
+.collapse-title {
+    color: white;
+    align-self: center;
+}
+
+.collapse-header {
+    display: flex;
+    height: 34px;
+    padding: 10px 15px 10px 15px;
+
+    background: #FF6060;
+    justify-content: space-between;
+    align-content: center;
+
+    border-radius: 5px;
+}
+
+.collapse-header img {
+    height : 14px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.collapse-content {
+    background: #F7F7F7;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.collapse-paragraph {
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .collapse-header img {
+        height : 8px;
+    }
+
+    .collapse-header {
+        height : 13px;
+    }
+
+    .collapse-content {
+        font-size : 12px;
+    }
+}

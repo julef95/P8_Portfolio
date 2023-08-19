@@ -1,0 +1,25 @@
+.header {
+    width : 90%;
+    height : 80px;
+    margin-left : 5%;
+    position: fixed;
+    top: 0;
+    display : flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.header-nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-links ul {
+    display : flex;
+    list-style: none;
+}
+
+.header-nav-links li {
+    padding-left : 10px;
+    padding-right : 10px;
+}
