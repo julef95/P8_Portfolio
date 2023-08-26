@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
+import Tag from '../Tag/tag';
 import './card.css';
 
-function Card({ title, mainImage, description, technologies, additionalImages }) {
+function Card({ title, mainImage, description, tags, link, photos }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = (e) => {
@@ -25,20 +26,40 @@ function Card({ title, mainImage, description, technologies, additionalImages })
             <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
-                className="modal"
+                className="card-modal"
                 overlayClassName="modal-overlay"
                 appElement={document.getElementById('root')}
-            >
-                <h2>{title}</h2>
-                <img src={mainImage} alt={title} />
-                <p>{description}</p>
-                <ul>
-                    {technologies.map((tech, index) => (
-                        <li key={index}>{tech}</li>
-                    ))}
-                </ul>
+                >
+
+                <button onClick={closeModal} className='card-modal-button'><i class="fa-solid fa-xmark"></i></button>
+               
+                <div className='card-modal-content'>
+                    <h2 className='card-modal-title'>{title}</h2>
+                    <ul className='card-modal-description'>
+                        {description.map((description, index) => (
+                                <li key={index}>{description}</li>
+                        ))}
+                    </ul>
+                    <div className='card-modal-tags'>
+                        <p>Technologies employées :</p>
+                        <Tag tags={tags} />
+                    </div>
+                    <div className='card-modal-link'>
+                        <p>Lien Github :</p>
+                        <a href="{link}">{link}</a>
+                    </div>
+                </div>
+
+                <div className='card-modal-photos'>
+                    <div className='card-modal-photos-container'>
+                        {photos.map((photos, index) => (
+                            <img key={index} src={photos.src} alt={photos.alt} className="card-modal-photo" />
+                        ))}
+                    </div>
+                </div>
+
                 {/* Ajoutez d'autres éléments comme additionalImages */}
-                <button onClick={closeModal}>Fermer</button>
+                
             </Modal>
         </div>
     );

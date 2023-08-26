@@ -1,0 +1,17 @@
+.tag-container {
+    display: flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.tag {
+    padding : 0 3px 0 3px;
+    height: 25px;
+    border-radius: 10px;
+    background: #FF6060;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}

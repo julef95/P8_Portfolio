@@ -3,6 +3,7 @@ import ReactTyped from "react-typed"
 import {projects} from '../../datas/projects'
 import Collapse from '../../components/Collapse/collapse'
 import Card from '../../components/Card/card'
+import ContactForm from '../../components/ContactForm/contact-form'
 import './home.css';
 
 function Home() {
@@ -50,7 +51,6 @@ function Home() {
                         <h3>Quelques anecdotes :</h3>
                         <ul>
                             <li>J'ai cofondé deux startups : une dans le domaine de l'orientation scolaire grâce à la réalité virtuelle et l'autre dans l'investissement en crypto-monnaies.</li>
-                            <li>J'ai voulu être "soigneur pour animaux sauvages", puis architecte, pilote, médecin, mathématicien, et enfin archéologue avant de me diriger vers l'économie.</li>
                             <li>J'ai une âme d'aventurier mais je tombe toujours malade durant mes voyages.</li>
                         </ul>  
                     </div>
@@ -76,7 +76,10 @@ function Home() {
             </div>
 
             <div className='home-contact' id='contact-anchor'>
-
+                <div className='home-contact-content'>
+                    <h2>Contactez-moi</h2>
+                    <ContactForm />
+                </div>
             </div>
 
             <div className='home-footer'>
