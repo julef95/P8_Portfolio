@@ -2,8 +2,6 @@
     width: 50%;
     max-width : 500px;
     margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -13,18 +11,18 @@
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
   
-.form-control {
+.form-input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
   
 .form-button {
+    width : 50%;
     background-color: #dc3545;
     color: white;
     border: none;
@@ -41,4 +39,10 @@ form {
 .form-line {
     display: flex;
     flex-direction: column;
+    width : 100%;
+    margin : 10px 0 10px 0;
+}
+
+#message {
+    height : 100px;
 }

@@ -2,17 +2,20 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
+import { useTranslation } from 'react-i18next';
+
 import './contact-form.css'
 
 const schema = yup.object().shape({
-  firstName: yup.string().required('Prénom obligatoire').matches(/^[A-Za-zÀ-ÿ\-\'\s]+$/, 'Format incorrect'),
-  lastName: yup.string().required('Nom obligatoire').matches(/^[A-Za-zÀ-ÿ\-\'\s]+$/, 'Format incorrect'),
+  firstName: yup.string().required('Prénom obligatoire').matches(/^[A-Za-zÀ-ÿ\-'\s]+$/, 'Format incorrect'),
+  lastName: yup.string().required('Nom obligatoire').matches(/^[A-Za-zÀ-ÿ\-'\s]+$/, 'Format incorrect'),
   email: yup.string().required('Email obligatoire').email('Format incorrect'),
   phone: yup.string().matches(/^\+?[0-9]*$/, 'Format incorrect'),
   message: yup.string().required('Veuillez ajouter un message'),
 });
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const {
     register,
     handleSubmit,
@@ -31,7 +34,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
 
         <div className="form-line">
-          <label htmlFor="firstName" className='form-label'>Prénom</label>
+          <label htmlFor="firstName" className='form-label'>{t('Prénom')}</label>
           <input
             type="text"
             id="firstName"
@@ -46,7 +49,7 @@ const ContactForm = () => {
         </div>
 
         <div className="form-line">
-          <label htmlFor="lastName" className='form-label'>Nom</label>
+          <label htmlFor="lastName" className='form-label'>{t('Nom')}</label>
           <input
             type="text"
             id="lastName"
@@ -74,13 +77,13 @@ const ContactForm = () => {
           )}
         </div>
         <div className="form-line">
-          <label htmlFor="phone" className='form-label'>Téléphone (facultatif)</label>
+          <label htmlFor="phone" className='form-label'>{t('Téléphone')} (facultatif)</label>
           <input
             type="tel"
             id="phone"
             name="phone"
             className="form-input"
-            placeholder="+33123456789"
+            placeholder={t("0123456789")}
             {...register('phone')}
           />
           {errors.phone && (
@@ -93,7 +96,7 @@ const ContactForm = () => {
             id="message"
             name="message"
             className="form-input"
-            placeholder="Bonjour Julien, ..."
+            placeholder={t("Bonjour Julien, ...")}
             {...register('message')}
           />
           {errors.message && (
@@ -101,7 +104,7 @@ const ContactForm = () => {
           )}
         </div>
         <button type="submit" className="form-button">
-          Envoyer
+          {t('Envoyer')}
         </button>
       </form>
     </div>

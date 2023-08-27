@@ -25,6 +25,31 @@ a, button, .clickable {
     font-size:24px;
 }
 
+.welcome-page-buttons{
+    display: flex;
+    align-items: center;
+    margin-top : 50px;
+    gap : 50px;
+}
+
+.welcome-page-button {
+    height : 25px;
+    padding : 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.github-logo {
+    width:25px;
+    height:25px;
+}
+
 .home-about {
     height: 100vh;
     display : flex;
@@ -35,6 +60,16 @@ a, button, .clickable {
 .home-about-content {
     width : 68%;
     margin-left : 30%;
+}
+
+.home-about-title, .home-about-links {
+    display: flex;
+    align-items: center;
+}
+
+.links-logo {
+    width : 50px;
+    justify-self: center;
 }
 
 .home-about-content-interests {
@@ -54,10 +89,30 @@ a, button, .clickable {
 
 .home-services-content {
     margin-top : 80px;
-    width: 96%;
+    min-width : 600px;
+    max-width : 1000px;
     display :flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.services-card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-logo-container{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    width : 80%;
+}
+
+.services-logo {
+    width : 20%;
+    object-fit: cover; 
 }
 
 .home-portfolio {
@@ -81,22 +136,11 @@ a, button, .clickable {
     gap : 5%;
 }
 
-.home-portfolio-card {
-    cursor: pointer;
-    width: 30%;
-    height: 0; /* Ajoutez cette ligne pour que la hauteur soit calculée en fonction de la largeur */
-    padding-top: 30%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    margin: 0px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s; /* Ajoutez une transition pour le changement de couleur de fond */
-}
-
-.home-portfolio-card:hover {
-    background-color: rgba(255, 255, 255, 1); /* Changement de couleur au survol */
+.portfolio-github-link {
+    display: flex;
+    margin-top : 50px;
+    align-items: center;
+    gap : 10px;
 }
 
 .home-contact {
@@ -110,6 +154,9 @@ a, button, .clickable {
     margin-top : 80px;
     width: 96%;
     display :flex;
-    flex-direction: column;
     align-items: center;
+}
+
+.contact-linkedin {
+    display:flex;
 }

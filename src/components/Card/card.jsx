@@ -1,9 +1,13 @@
+import Tag from '../Tag/tag';
+
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import Tag from '../Tag/tag';
+import { useTranslation } from 'react-i18next';
+
 import './card.css';
 
 function Card({ title, mainImage, description, tags, link, photos }) {
+    const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = (e) => {
@@ -21,7 +25,7 @@ function Card({ title, mainImage, description, tags, link, photos }) {
     return (
         <div className='home-portfolio-card' onClick={openModal}>
             <img src={mainImage.src} alt={mainImage.title} className="card-main-image" />
-            <p className="card-title">{title}</p>
+            <p className="card-title">{t(title)}</p>
 
             <Modal
                 isOpen={isModalOpen}
@@ -34,18 +38,19 @@ function Card({ title, mainImage, description, tags, link, photos }) {
                 <button onClick={closeModal} className='card-modal-button'><i class="fa-solid fa-xmark"></i></button>
                
                 <div className='card-modal-content'>
-                    <h2 className='card-modal-title'>{title}</h2>
+                    <h2 className='card-modal-title'>{t(title)}</h2>
                     <ul className='card-modal-description'>
                         {description.map((description, index) => (
-                                <li key={index}>{description}</li>
+                                <li key={index}>{t(description)}</li>
                         ))}
                     </ul>
+                    <p>{t('Difficultés rencontrées')} : -</p>
                     <div className='card-modal-tags'>
-                        <p>Technologies employées :</p>
+                        <p>{t('Technologies employées :')} </p>
                         <Tag tags={tags} />
                     </div>
                     <div className='card-modal-link'>
-                        <p>Lien Github :</p>
+                        <p>{t('Lien Github :')} </p>
                         <a href="{link}">{link}</a>
                     </div>
                 </div>

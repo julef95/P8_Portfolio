@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import flecheBas from '../../assets/fleche_bas.png'
-import flecheHaut from '../../assets/fleche_haut.png'
+import { useTranslation } from 'react-i18next';
+
 import './collapse.css'
 
 function Collapse({ title, content }) {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
   
     const handleToggle = () => {
@@ -11,30 +12,20 @@ function Collapse({ title, content }) {
     };
   
     return (
-        <div className="collapse">
+        <div className={`collapse ${isOpen ? 'open' : ''}`}>
             <div className="collapse-header">
-                <p className='collapse-title'>{title}</p>
+                <p className='collapse-title'>{t(title)}</p>
                 {isOpen ? (
-                <img
-                    src={flecheHaut}
-                    alt="Flèche Haut"
-                    className="arrow"
-                    onClick={handleToggle}
-                />
+                <i className="fa-solid fa-minus" onClick={handleToggle}></i>
                 ) : (
-                <img
-                    src={flecheBas}
-                    alt="Flèche Bas"
-                    className="arrow"
-                    onClick={handleToggle}
-                />
+                <i className="fa-solid fa-plus" onClick={handleToggle}></i>
                 )}
             </div>
 
             {isOpen && (
                 <div className="collapse-content">
                     {Array.isArray(content) ? (content.map((item, index) => (
-                    <div key={index} dangerouslySetInnerHTML={{ __html: item }} className='collapse-paragraph'></div>))) : (<div dangerouslySetInnerHTML={{ __html: content }} className='collapse-paragraph'></div>)}
+                    <div key={index} dangerouslySetInnerHTML={{ __html: t(item) }} className='collapse-paragraph'></div>))) : (<div dangerouslySetInnerHTML={{ __html: t(content) }} className='collapse-paragraph'></div>)}
                  </div>
             )}
         </div>

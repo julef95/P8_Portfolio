@@ -8,11 +8,22 @@
     height: 34px;
     padding: 10px 15px 10px 15px;
 
+
     background: #FF6060;
     justify-content: space-between;
     align-content: center;
 
     border-radius: 5px;
+}
+
+.collapse {
+    width: 300px; /* Largeur initiale fermée */
+    overflow: hidden;
+    border-radius: 5px;
+}
+  
+.collapse.open {
+    width: 100%; /* Largeur maximale ouverte */
 }
 
 .collapse-header img {
@@ -25,11 +36,26 @@
     background: #F7F7F7;
     padding: 10px 15px 10px 15px;
     border-radius: 0 0 5px 5px;
+    max-height: 0;
+    opacity: 0;
+
+    overflow: hidden;
+}
+
+.collapse.open .collapse-content {
+    max-height: 1000px; /* Hauteur maximale ouverte */
+    opacity: 1;
 }
 
 .collapse-paragraph {
     margin-top : 10px;
     margin-bottom : 10px;
+}
+
+.fa-minus, .fa-plus {
+    color: white;
+    align-self: center;
+    cursor: pointer;
 }
 
 

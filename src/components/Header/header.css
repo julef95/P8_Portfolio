@@ -9,17 +9,38 @@
     z-index: 1000;
 }
 
+.header-title {
+    margin-left : 2%;
+}
+
 .header-nav-links {
     display: flex;
     align-items: center;
+    margin-right : 2%;
 }
 
 .header-nav-links ul {
     display : flex;
     list-style: none;
+    padding-left:0;
 }
 
 .header-nav-links li {
     padding-left : 10px;
     padding-right : 10px;
 }
+
+.nav-link-active {
+    color: #FF6060;
+}
+
+.button-language {
+    display: flex;
+    align-items: center;
+    gap : 5px;
+}
+
+.icon-flag {
+    width : 15px;
+}
+  
