@@ -21,6 +21,7 @@ function Home() {
             </div>
 
             <div className='home-welcome-page' id='home-anchor'>
+                <img src="/assets/images/background_home.png" alt="accueil Julien Lefevre" className='background-home' />
                 <div className='home-welcome-page-content'>
                     <h1>Julien Lefevre</h1>
                     <ReactTyped strings={[t("Développeur full-stack")]} typeSpeed={100} loop className='home-welcome-page-content-p' />
@@ -35,6 +36,9 @@ function Home() {
             </div>
 
             <div className='home-about' id='about-anchor'>
+                <div className='about-photo-container'>
+                    <img src="/assets/images/photo_me.jpg" alt="Julien Lefevre" className='photo-me' />
+                </div>
                 <div className='home-about-content'>
                     <div className='home-about-title'>
                         <h2>{t('À propos de moi')}</h2>

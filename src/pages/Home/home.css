@@ -9,6 +9,21 @@ a, button, .clickable {
     cursor: pointer;
 }
 
+.home-welcome-page {
+    position: relative;
+}
+
+
+.background-home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
 .home-welcome-page-content {
     margin-left : 5%;
     height: 100vh;
@@ -19,10 +34,12 @@ a, button, .clickable {
 
 .home-welcome-page-content h1 {
     font-size:36px;
+    background-color: white;
 }
 
 .home-welcome-page-content-p {
     font-size:24px;
+    background-color: white;
 }
 
 .welcome-page-buttons{
@@ -51,15 +68,29 @@ a, button, .clickable {
 }
 
 .home-about {
-    height: 100vh;
-    display : flex;
-    flex-direction: column;
-    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    overflow: visible;
+}
+
+.about-photo-container {
+    margin-top : 80px;
+    width : 25%;
+}
+
+.photo-me {
+    position: relative;
+    height: 100%;
+    width : 100%;
+    object-fit: cover;
 }
 
 .home-about-content {
-    width : 68%;
-    margin-left : 30%;
+    display : flex;
+    flex-direction: column;
+    margin-top : 80px;
+    width : 74%;
+    margin-left : 1%;
 }
 
 .home-about-title, .home-about-links {
@@ -85,6 +116,7 @@ a, button, .clickable {
     display : flex;
     flex-direction: column;
     align-items: center;
+    background-color: hsl(354, 70%, 90%);
 }
 
 .home-services-content {
@@ -146,8 +178,9 @@ a, button, .clickable {
 .home-contact {
     height: 100vh;
     display : flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: hsl(354, 70%, 90%);
 }
 
 .home-contact-content {

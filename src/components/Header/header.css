@@ -32,12 +32,17 @@
 
 .nav-link-active {
     color: #FF6060;
+    font-weight: bold;
 }
 
 .button-language {
     display: flex;
     align-items: center;
     gap : 5px;
+    background-color: white;
+    border-width: 1px;
+    border-color: grey;
+    border-radius: 3px;
 }
 
 .icon-flag {
