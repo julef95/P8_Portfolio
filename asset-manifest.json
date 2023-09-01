@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/P8_Portfolio/static/css/main.0ad48316.css",
-    "main.js": "/P8_Portfolio/static/js/main.30088baa.js",
+    "main.css": "/P8_Portfolio/static/css/main.ef29518f.css",
+    "main.js": "/P8_Portfolio/static/js/main.cf235934.js",
     "static/media/Sophie_bluel_home.png": "/P8_Portfolio/static/media/Sophie_bluel_home.4ce6ee0e16b76abc8dec.png",
     "static/media/Mon_vieux_grimoire_home.png": "/P8_Portfolio/static/media/Mon_vieux_grimoire_home.c9586d133d171db4280f.png",
     "static/media/Mon_vieux_grimoire_book.png": "/P8_Portfolio/static/media/Mon_vieux_grimoire_book.86609a9229c0d8d37e0e.png",
@@ -13,14 +13,15 @@
     "static/media/Kasa_housing.png": "/P8_Portfolio/static/media/Kasa_housing.26193642e82653f5af5a.png",
     "static/media/Sophie_bluel_modal_2.png": "/P8_Portfolio/static/media/Sophie_bluel_modal_2.fa39f7affe83c8c6bf85.png",
     "static/media/Mon_vieux_grimoire_create.png": "/P8_Portfolio/static/media/Mon_vieux_grimoire_create.da13ece3233401a654eb.png",
+    "static/media/background_home.png": "/P8_Portfolio/static/media/background_home.70f7f3aba7698758ca95.png",
     "static/media/Mon_vieux_grimoire_login.png": "/P8_Portfolio/static/media/Mon_vieux_grimoire_login.78da760c58016118f44f.png",
     "static/media/Sophie_bluel_login.png": "/P8_Portfolio/static/media/Sophie_bluel_login.5c16c6daa2e6f7f2062b.png",
     "index.html": "/P8_Portfolio/index.html",
-    "main.0ad48316.css.map": "/P8_Portfolio/static/css/main.0ad48316.css.map",
-    "main.30088baa.js.map": "/P8_Portfolio/static/js/main.30088baa.js.map"
+    "main.ef29518f.css.map": "/P8_Portfolio/static/css/main.ef29518f.css.map",
+    "main.cf235934.js.map": "/P8_Portfolio/static/js/main.cf235934.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ad48316.css",
-    "static/js/main.30088baa.js"
+    "static/css/main.ef29518f.css",
+    "static/js/main.cf235934.js"
   ]
 }
