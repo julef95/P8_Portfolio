@@ -113,6 +113,15 @@
     .card-title {
         font-size: 20px;
     }
+
+    .card-main-image {
+        opacity: 0.1;
+    }
+      
+    .card-title {
+        left : 0;
+        transition: none; /* Ajoutez une transition pour le déplacement du titre */
+    }
 }
 
 @media (max-width: 767px) {
