@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/P8_Portfolio/static/css/main.ef29518f.css",
+    "main.css": "/P8_Portfolio/static/css/main.5a54c3fb.css",
     "main.js": "/P8_Portfolio/static/js/main.67445a82.js",
     "static/media/Sophie_bluel_home.png": "/P8_Portfolio/static/media/Sophie_bluel_home.4ce6ee0e16b76abc8dec.png",
     "static/media/Mon_vieux_grimoire_home.png": "/P8_Portfolio/static/media/Mon_vieux_grimoire_home.c9586d133d171db4280f.png",
@@ -17,11 +17,11 @@
     "static/media/Mon_vieux_grimoire_login.png": "/P8_Portfolio/static/media/Mon_vieux_grimoire_login.78da760c58016118f44f.png",
     "static/media/Sophie_bluel_login.png": "/P8_Portfolio/static/media/Sophie_bluel_login.5c16c6daa2e6f7f2062b.png",
     "index.html": "/P8_Portfolio/index.html",
-    "main.ef29518f.css.map": "/P8_Portfolio/static/css/main.ef29518f.css.map",
+    "main.5a54c3fb.css.map": "/P8_Portfolio/static/css/main.5a54c3fb.css.map",
     "main.67445a82.js.map": "/P8_Portfolio/static/js/main.67445a82.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef29518f.css",
+    "static/css/main.5a54c3fb.css",
     "static/js/main.67445a82.js"
   ]
 }
