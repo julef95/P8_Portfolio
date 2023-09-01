@@ -27,7 +27,7 @@ i18n
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={'/P8_Portfolio'}>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

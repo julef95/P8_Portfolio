@@ -38,7 +38,7 @@ function Header() {
                         <li><Link to='contact-anchor' smooth={true} duration={500}>{t('Contactez-moi')}</Link></li>
                 </Scrollspy>
                 <button onClick={() => changeLanguage(i18n.language === 'fr' ? 'en' : 'fr')} className='button-language'>
-                    <img src={`/assets/images/${i18n.language === 'fr' ? 'UK.png' : 'FR.png'}`} alt={`Drapeau ${i18n.language === 'fr' ? 'anglais' : 'français'}`} className='icon-flag' />
+                    <img src={`./assets/images/${i18n.language === 'fr' ? 'UK.png' : 'FR.png'}`} alt={`Drapeau ${i18n.language === 'fr' ? 'anglais' : 'français'}`} className='icon-flag' />
                     <div className='button-language-text'>{i18n.language === 'fr' ? 'English' : 'Français'}</div>
                 </button>
             </nav>

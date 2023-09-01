@@ -21,7 +21,6 @@ function Home() {
             </div>
 
             <div className='home-welcome-page' id='home-anchor'>
-                <img src="/assets/images/background_home.png" alt="accueil Julien Lefevre" className='background-home' />
                 <div className='home-welcome-page-content'>
                     <h1>Julien Lefevre</h1>
                     <ReactTyped strings={[t("Développeur full-stack")]} typeSpeed={100} loop className='home-welcome-page-content-p' />
@@ -29,7 +28,7 @@ function Home() {
                         <Link to='contact-anchor' smooth={true} duration={500} className='welcome-page-button'>{t('Me contacter')}</Link>
                         <div className='github-button'>
                             <a href='https://github.com/julef95?tab=repositories' className='welcome-page-button' target="_blank" rel="noopener noreferrer">
-                            <img src="/assets/images/Github.png" alt='Logo Github' className='github-logo' />Github</a>
+                            <img src="./assets/images/Github.png" alt='Logo Github' className='github-logo' />Github</a>
                         </div>
                     </div>
                 </div>
@@ -37,12 +36,12 @@ function Home() {
 
             <div className='home-about' id='about-anchor'>
                 <div className='about-photo-container'>
-                    <img src="/assets/images/photo_me.jpg" alt="Julien Lefevre" className='photo-me' />
+                    <img src="./assets/images/photo_me.jpg" alt="Julien Lefevre" className='photo-me' />
                 </div>
                 <div className='home-about-content'>
                     <div className='home-about-title'>
                         <h2>{t('À propos de moi')}</h2>
-                        <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="/assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
+                        <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="./assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
                     </div>
                     <p>{t('Je suis développeur web fullstack depuis 2023 après un début de carrière en Finance.')}</p>
                     <Collapse title='En savoir plus sur mon parcours' content={["J'ai obtenu mon master en finance à l'université Paris-Dauphine en 2020 en ayant effectué des stages au sein des plus grandes banques en France et à l'étranger et un échange d'un semestre aux USA.", 
@@ -85,16 +84,16 @@ function Home() {
                     <h2>{t('Mes services')}</h2>
                     <div className='home-services-frontend'>
                         <div className='services-card-container'>
-                            <CardService title="Sites web et mobile" logo="/assets/images/landing_page2.png" content="Développe des sites et applications accessibles sur ordinateurs, tablettes et mobiles." />
-                            <CardService title="Expérience utilisateur" logo="/assets/images/design.png" content="Une expérience fluide et magnifique pour vos clients." />
-                            <CardService title="Optimisation" logo="/assets/images/optimization.png" content="Code optimisé pour de meilleures performances, un meilleur SEO et une meilleure accessibilité." />
+                            <CardService title="Sites web et mobile" logo="./assets/images/landing_page2.png" content="Développe des sites et applications accessibles sur ordinateurs, tablettes et mobiles." />
+                            <CardService title="Expérience utilisateur" logo="./assets/images/design.png" content="Une expérience fluide et magnifique pour vos clients." />
+                            <CardService title="Optimisation" logo="./assets/images/optimization.png" content="Code optimisé pour de meilleures performances, un meilleur SEO et une meilleure accessibilité." />
                         </div>
 
                         <h3>{t('Technologies maitrisées :')}</h3>
                         <div className='services-logo-container'>
-                            <img src="/assets/images/HTMLCSS.png" alt="logo HTML CSS" className='services-logo' />
-                            <img src="/assets/images/JavaScript.png" alt="logo JavaScript" className='services-logo' />
-                            <img src="/assets/images/ReactJS.png" alt="logo ReactJS" className='services-logo' />
+                            <img src="./assets/images/HTMLCSS.png" alt="logo HTML CSS" className='services-logo' />
+                            <img src="./assets/images/JavaScript.png" alt="logo JavaScript" className='services-logo' />
+                            <img src="./assets/images/ReactJS.png" alt="logo ReactJS" className='services-logo' />
                         </div>
                     </div>
                 </div>
@@ -109,7 +108,7 @@ function Home() {
                         ))}
                     </div>
                     <div className='portfolio-github-link'>
-                        <img src="/assets/images/Github.png" alt='Logo Github' className='github-logo' />
+                        <img src="./assets/images/Github.png" alt='Logo Github' className='github-logo' />
                         <p>{t('Lien Github :')} <a href="https://github.com/julef95?tab=repositories">https://github.com/julef95?tab=repositories</a></p>
                     </div>
                 </div>
@@ -122,7 +121,7 @@ function Home() {
                         <div className='home-contact-details-deskstop'>
                             <p>Email : lefevreju@hotmail.fr</p>
                             <div className='contact-linkedin'>
-                                <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="/assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
+                                <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="./assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
                                 <p> : https://www.linkedin.com/in/julien-lefevre/</p>
                             </div>
                         </div>
@@ -131,8 +130,8 @@ function Home() {
                     <div className='home-contact-details-mobile'>
                             <p>Email : lefevreju@hotmail.fr</p>
                             <div className='contact-linkedin'>
-                                <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="/assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
-                                <p> : https://www.linkedin.com/in/julien-lefevre/</p>
+                                <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="./assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
+                                <p className='linkedin-url'> : https://www.linkedin.com/in/julien-lefevre/</p>
                             </div>
                         </div> 
                 </div>
