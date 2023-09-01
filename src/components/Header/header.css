@@ -20,19 +20,24 @@
 }
 
 .header-nav-links ul {
+    height:100%;
     display : flex;
+    justify-content: center;
+    margin:0;
     list-style: none;
     padding-left:0;
 }
 
 .header-nav-links li {
+    display : flex;
+    align-items: center;
     padding-left : 10px;
     padding-right : 10px;
 }
 
 .nav-link-active {
     color: #FF6060;
-    font-weight: bold;
+    border-bottom: 2px solid #FF6060;
 }
 
 .button-language {
@@ -40,12 +45,107 @@
     align-items: center;
     gap : 5px;
     background-color: white;
-    border-width: 1px;
-    border-color: grey;
+    border: 1px solid grey;
     border-radius: 3px;
+    margin-left : 10px;
 }
 
 .icon-flag {
     width : 15px;
 }
-  
+
+.mobile-nav-button {
+    display: none; /* Masquer le bouton par défaut */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-nav-button {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .header-title {
+        margin-left : 5px;
+    }
+    
+    .header-nav-links {
+        margin-right : 5px;
+    }
+
+    .header-nav-links li {
+        padding-left : 5px;
+        padding-right : 5px;
+    }
+
+    .button-language {
+        margin-left : 5px;
+        padding:0;
+        border : none;
+    }
+
+    .button-language-text {
+        display: none;
+    }
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 767px) {
+    .header-nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding : 0px;
+        margin : 0px;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .nav-links-container{
+        display: flex;
+        flex-direction: column;
+        margin : 0;
+    }
+
+    .header-nav-links ul {
+        display : flex;
+        align-items: center;
+    }
+
+    .nav-links-container li {
+        justify-content: center;
+        width : 200px;
+        padding: 20px;
+
+    }
+
+    .button-language {
+        margin-top : 5px;
+        margin-bottom: 15px;
+        margin-left: 0;
+        border : none;
+    }
+
+    .mobile-nav-button {
+        display: block;
+    }
+
+    .header-nav-links.mobile-nav-active {
+        display: flex;
+    }
+
+    .button-language {
+        margin : 0;
+        padding:20px;
+    }
+
+    .button-language-text {
+        display: flex;
+    }
+}

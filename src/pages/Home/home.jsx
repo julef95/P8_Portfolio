@@ -117,15 +117,24 @@ function Home() {
 
             <div className='home-contact' id='contact-anchor'>
                 <div className='home-contact-content'>
-                    <div className='home-contact-details'>
+                    <div>
                         <h2>{t('Contactez-moi')}</h2>
-                        <p>Email : lefevreju@hotmail.fr</p>
-                        <div className='contact-linkedin'>
-                            <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="/assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
-                            <p> : https://www.linkedin.com/in/julien-lefevre/</p>
+                        <div className='home-contact-details-deskstop'>
+                            <p>Email : lefevreju@hotmail.fr</p>
+                            <div className='contact-linkedin'>
+                                <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="/assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
+                                <p> : https://www.linkedin.com/in/julien-lefevre/</p>
+                            </div>
                         </div>
                     </div>
-                    <ContactForm />
+                    <ContactForm />   
+                    <div className='home-contact-details-mobile'>
+                            <p>Email : lefevreju@hotmail.fr</p>
+                            <div className='contact-linkedin'>
+                                <a href="https://www.linkedin.com/in/julien-lefevre/"><img src="/assets/images/Linkedin.webp" alt='Logo Linkedin' className='links-logo' /></a>
+                                <p> : https://www.linkedin.com/in/julien-lefevre/</p>
+                            </div>
+                        </div> 
                 </div>
             </div>
 

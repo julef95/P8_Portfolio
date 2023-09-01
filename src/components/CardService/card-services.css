@@ -20,3 +20,37 @@
 .services-card-content {
     top : 100px;
 }
+
+@media (max-width: 991px) {
+    .services-card {
+        width: 210px;
+        height : 210px;
+    }
+
+    .services-card-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .services-card-description h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-card {
+        width: 250px;
+        height : 250px;
+    }
+
+    .services-card-logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    .services-card-description h2{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -60,15 +60,11 @@
 
 
 @media only screen and (max-width: 767px) {
-    .collapse-header img {
-        height : 8px;
-    }
-
     .collapse-header {
-        height : 13px;
+        height : 20px;
     }
 
     .collapse-content {
-        font-size : 12px;
+        font-size : 14px;
     }
 }

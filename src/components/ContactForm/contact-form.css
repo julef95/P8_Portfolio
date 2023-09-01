@@ -46,3 +46,10 @@ form {
 #message {
     height : 100px;
 }
+
+@media (max-width: 767px) {
+    .contact-form {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
