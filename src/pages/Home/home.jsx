@@ -49,7 +49,7 @@ function Home() {
                     "Après un premier CDI de deux ans en tant qu'analyste financier au sein d'une société de gestion, j'ai décidé de me former au développement web en suivant une formation intensive de six mois chez Openclassrooms. Je possède aujourd'hui le titre de Développeur intégrateur web et j'ai déjà développé plusieurs projets en utilisant des technologies telles que <b>Javascript</b>, React, Node.js, Express.js et Mongoose."
                     ]} />
                     <div className='home-about-links'>
-                        <p>{t('Téléchargez mon CV')} <a href={i18n.language === 'fr' ? '/assets/resume/CV Julien Lefevre.pdf' : '/assets/resume/Julien Lefevre resume.pdf'} download>{t('ici')}</a>.</p>
+                        <p>{t('Téléchargez mon CV')} <a href={i18n.language === 'fr' ? './assets/resume/CV Julien Lefevre.pdf' : './assets/resume/Julien Lefevre resume.pdf'} download>{t('ici')}</a>.</p>
                     </div>
                     <div className='home-about-content-interests'>
                         <div>
