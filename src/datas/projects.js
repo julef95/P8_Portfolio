@@ -10,6 +10,9 @@ export const projects = [
             "Création de différentes composants React (bannière, collapse, carroussel) avec gestion des états.",
             "Site responsive sur ordinateur et mobile."
         ],
+        difficulties : [
+            "Pas de difficulté particulière rencontrée."
+        ],
         tags: ["React", "JavaScript", "CSS"],
         link : "https://github.com/julef95/P6_Kasa",
         photos: [
@@ -32,6 +35,9 @@ export const projects = [
             "Création d'une page de connexion administrateur avec un formulaire d'authentification qui vérifie les identifiants et le token JWD.",
             "Création d'une modale dynamique pour permettre à la cliente connectée d'ajouter et de supprimer des travaux en envoyant des requêtes à l'API.",
             "Gestion des éléments du DOM"
+        ],
+        difficulties : [
+            "Pas de difficulté particulière rencontrée."
         ],
         tags: ["Javascript", "HTML", "CSS"],
         link : "https://github.com/julef95/P3_Sophie_Bluel",
@@ -58,6 +64,9 @@ export const projects = [
             "Gestion des fichiers utilisateur sur l'application grâce à multer et sharp pour optimiser les images envoyées.",
             "Implémentation d'un système de notation des livres.",
             'Sécurité : stockage des données sensibles dans un fichier .env, vérification des formats des identifiants grâce à express-validator et ajout d\'un rate limiting avec express-rate-limit.'
+        ],
+        difficulties : [
+            "Difficulté pour actualiser les notes en direct lors de l'ajout. Résolue en me documentant plus amplement sur les méthodes Mongoose dont celle findByIdAndUpdate."
         ],
         tags: ["Javascript", "NodeJS", "ExpressJS", "Mongoose"],
         link : "https://github.com/julef95/P7_Mon_Vieux_Grimoire",

@@ -55,7 +55,9 @@
     "Implémentation d'un système de notation des livres.": "Implémentation d'un système de notation des livres.",
     "Sécurité : stockage des données sensibles dans un fichier .env, vérification des formats des identifiants grâce à express-validator et ajout d'un rate limiting avec express-rate-limit.": "Sécurité : stockage des données sensibles dans un fichier .env, vérification des formats des identifiants grâce à express-validator et ajout d'un rate limiting avec express-rate-limit.",
     
-    "Difficultés rencontrées": "Difficultés rencontrées",
+    "Difficultés rencontrées :": "Difficultés rencontrées :",
+    "Difficulté pour actualiser les notes en direct lors de l'ajout. Résolue en me documentant plus amplement sur les méthodes Mongoose dont celle findByIdAndUpdate.":
+    "Difficulté pour actualiser les notes en direct lors de l'ajout. Résolue en me documentant plus amplement sur les méthodes Mongoose dont celle findByIdAndUpdate.",
     "Technologies employées :" : "Technologies employées :",
     "Lien Github :" : "Lien Github :",
 

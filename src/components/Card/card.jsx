@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 import './card.css';
 
-function Card({ title, mainImage, description, tags, link, photos }) {
+function Card({ title, mainImage, description, difficulties, tags, link, photos }) {
     const { t } = useTranslation();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -44,14 +44,19 @@ function Card({ title, mainImage, description, tags, link, photos }) {
                                 <li key={index}>{t(description)}</li>
                         ))}
                     </ul>
-                    <p>{t('Difficultés rencontrées')} : -</p>
+                    <p>Difficultés recontrées :</p>
+                    <ul className='card-modal-difficulties'>
+                        {difficulties.map((difficulties, index) => (
+                                <li key={index}>{t(difficulties)}</li>
+                        ))}
+                    </ul>
                     <div className='card-modal-tags'>
                         <p>{t('Technologies employées :')} </p>
                         <Tag tags={tags} />
                     </div>
                     <div className='card-modal-link'>
                         <p>{t('Lien Github :')} </p>
-                        <a href="{link}">{link}</a>
+                        <a href={link}>{link}</a>
                     </div>
                 </div>
 
